@@ -32,7 +32,78 @@
     </header>
 
     <main class="page-main">
-
+      <section class="order">
+        <h2 class="order__title title">Вязание на заказ</h2>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru" method="GET" class="order__form form">
+          <fieldset class="form__block form__block--type">
+            <legend class="form__title">Тип</legend>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="form__name form__name--radio">
+                  <input class="form__radio" type="radio" name="type" value="accessory" checked>
+                  <span class="form__box form__box--radio"></span>
+                  <span class="form__description form__description--radio">Аксессуар для интерьера</span>
+                </label>
+              </li>
+              <li class="form__item">
+                <label class="form__name form__name--radio">
+                  <input class="form__radio" type="radio" name="type" value="toy">
+                  <span class="form__box form__box--radio"></span>
+                  <span class="form__description form__description--radio">Детская игрушка</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__block form__block--color">
+            <legend class="title form__title form__title--color">ЦВет</legend>
+            <ul class="form__list form__list--color">
+              <li class="form__item form__item--color">
+                <label class="form__name form__name--color">
+                  <input class="form__check" type="checkbox" name="color" value="white" checked>
+                  <span class="form__box form__box--check"></span>
+                  <span class="form__description form__description--check">Белый</span>
+                </label>
+              </li>
+              <li class="form__item form__item--color">
+                <label class="form__name form__name--color">
+                  <input class="form__check" type="checkbox" name="color" value="gray" checked>
+                  <span class="form__box form__box--check"></span>
+                  <span class="form__description form__description--check">Серый</span>
+                </label>
+              </li>
+              <li class="form__item form__item--color">
+                <label class="form__name form__name--color">
+                  <input class="form__check" type="checkbox" name="color" value="tiffany">
+                  <span class="form__box form__box--check"></span>
+                  <span class="form__description form__description--check">«Тиффани»</span>
+                </label>
+              </li>
+              <li class="form__item form__item--color">
+                <label class="form__name form__name--color">
+                  <input class="form__check" type="checkbox" name="color" value="black">
+                  <span class="form__box form__box--check"></span>
+                  <span class="form__description form__description--check">Черный</span>
+                </label>
+              </li>
+              <li class="form__item form__item--color">
+                <label class="form__name form__name--color">
+                  <input class="form__check" type="checkbox" name="color" value="pink">
+                  <span class="form__box form__box--check"></span>
+                  <span class="form__description form__description--check">Розовый</span>
+                </label>
+              </li>
+              <li class="form__item form__item--color">
+                <label class="form__name form__name--color">
+                  <input class="form__check" type="checkbox" name="color" value="orange">
+                  <span class="form__box form__box--check"></span>
+                  <span class="form__description form__description--check">Оранжевый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -40,7 +111,7 @@
         <h2 class="contacts__title title">Контакты</h2>
         <div class="contacts__wrapper">
           <p class="contacts__text">e-mail:</p>
-          <a class="contacts__link" href="mailto:info@mimimishkashop.ru"></a>
+          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
         </div>
         <div class="contacts__wrapper">
           <p class="contacts__text">адрес:</p>
