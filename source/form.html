@@ -102,6 +102,49 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="form__block form__block--about">
+            <legend class="visually-hidden">ФИО</legend>
+            <label class="form__name form__name--about">
+              <span class="form__description form__description--about">Имя:</span>
+              <input type="text" class="form__input form__input--required" name="name" placeholder="Введите ваше имя*" required>
+            </label>
+            <label class="form__name form__name--about">
+              <span class="form__description form__description--about">Фамилия:</span>
+              <input type="text" class="form__input form__input--required" name="surname" placeholder="Укажите фамилию*" required>
+            </label>
+            <label class="form__name form__name--about">
+              <span class="form__description form__description--about">Отчество:</span>
+              <input type="text" class="form__input" name="patronymic" placeholder="Отчество, если желаете">
+            </label>
+          </fieldset>
+          <fieldset class="form__block form__block--phone">
+            <legend class="title form__title form__title--phone">тел</legend>
+              <label class="form__name form__name--phone">
+                <span class="visually-hidden">телефон</span>
+                <input type="tel" class="form__input form__input--contact form__input--required" name="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+                <svg width="25" height="24" class="form__img">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
+              </label>
+          </fieldset>
+          <fieldset class="form__block form__block--phone">
+            <label class="form__name form__name--contact">
+              <span class="form__description">Телефон:*</span>
+              <input type="email" class="form__input form__input--contact form__input--required" name="email" placeholder="Ваш Email*" required>
+              <svg width="32" height="21" class="form__img">
+                <use xlink:href="img/sprite.svg#icon-mail"></use>
+              </svg>
+            </label>
+          </fieldset>
+          <fieldset class="form__block form__block--comment">
+            <legend class="title form__title form__title--comment">Доп</legend>
+            <label class="visually-hidden" for="comment">Напишите комментарий</label>
+            <textarea class="form__input form__input--comment" name="comment" id="comment" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <div class="form__inner form__inner--btn">
+            <button class="button form__button" type="submit">ОТПРАВИТЬ ЗАКАЗ</button>
+            <p class="form__text">*Поля обязательны для заполнения</p>
+          </div>
         </form>
       </section>
     </main>
