@@ -1,0 +1,31 @@
+.featured {
+  display: grid;
+  padding: 0 30px;
+  padding-top: 30px;
+}
+
+.featured__subtitle {
+  grid-row: 1/2;
+}
+
+.featured__title {
+  grid-row: 2/3;
+  margin: 0;
+  padding-bottom: 17px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-green;
+}
+
+.featured__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: $special-grey-dark;
+}
+
+.featured__description {
+  padding-bottom: 28px;
+}
