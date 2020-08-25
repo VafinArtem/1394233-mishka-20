@@ -19,11 +19,24 @@
   color: $basic-green;
 }
 
+.featured__img {
+  text-align: center;
+}
+
 .featured__text {
   margin: 0;
   font-size: 15px;
   line-height: 24px;
   color: $special-grey-dark;
+
+  &--cost {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .featured__description {
