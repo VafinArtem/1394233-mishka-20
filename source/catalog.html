@@ -43,47 +43,75 @@
   <main class="page-main">
     <section class="catalog">
       <h2 class="catalog__title title">Каталог товаров</h2>
-      <ul class="catalog__list">
+      <ul class="catalog__list container">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg">
               <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg">
-              <img src="img/photo-hare-mobile@1x.jpg"
+              <img class="catalog__img" src="img/photo-hare-mobile@1x.jpg"
                 alt="Фото товара вязанного серого зайчика в синей одежде который стоит перед стаканчиком с мороженным">
             </picture>
           </a>
-          <a href="#" class="catalog__subtitle">Зайчик-попрыгайчик</a>
-          <p class="catalog__description">Рост 30 см, вес 200 г</p>
-          <p class="catalog__description catalog__description--cost">1 200 руб.</p>
-          <button class="catalog_button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <div class="catalog__wrapper">
+            <a href="#" class="catalog__subtitle">Зайчик-попрыгайчик</a>
+            <p class="catalog__description">Рост 30 см, вес 200 г</p>
+            <div class="catalog__inner">
+              <p class="catalog__description catalog__description--cost">1 200 руб.</p>
+              <button class="catalog__button" type="submit">
+                <svg class="catalog__icon" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="visually-hidden">В корзину</span>
+              </button>
+            </div>
+          </div>
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
               <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-              <img src="img/photo-bowl-mobile@1x.jpg" alt="Фото товара вязанной корзинки белого и оранжевого цвета">
+              <img class="catalog__img" src="img/photo-bowl-mobile@1x.jpg"
+                alt="Фото товара вязанной корзинки белого и оранжевого цвета">
             </picture>
           </a>
-          <a href="#" class="catalog__subtitle">Корзинка для белья</a>
-          <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
-          <p class="catalog__description catalog__description--cost">690 руб.</p>
-          <button class="catalog_button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <div class="catalog__wrapper">
+            <a href="#" class="catalog__subtitle">Корзинка для белья</a>
+            <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
+            <div class="catalog__inner">
+              <p class="catalog__description catalog__description--cost">690 руб.</p>
+              <button class="catalog__button" type="submit">
+                <svg class="catalog__icon" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="visually-hidden">В корзину</span>
+              </button>
+            </div>
+          </div>
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
             <picture>
               <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg">
               <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg">
-              <img src="img/photo-toys-mobile@1x.jpg"
+              <img class="catalog__img" src="img/photo-toys-mobile@1x.jpg"
                 alt="Фото товара вязанного серого зайчика в синей одежде который стоит перед стаканчиком с мороженным">
             </picture>
           </a>
-          <a href="#" class="catalog__subtitle">Большая корзинкадля игрушек</a>
-          <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
-          <p class="catalog__description catalog__description--cost">1 500 руб.</p>
-          <button class="catalog_button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <div class="catalog__wrapper">
+            <a href="#" class="catalog__subtitle">Большая корзинка для игрушек</a>
+            <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
+            <div class="catalog__inner">
+              <p class="catalog__description catalog__description--cost">1 500 руб.</p>
+              <button class="catalog__button" type="submit">
+                <svg class="catalog__icon" width="20" height="19">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="visually-hidden">В корзину</span>
+              </button>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
