@@ -1,0 +1,24 @@
+.submenu {
+  display: block;
+  min-width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 66px;
+  border-bottom: 1px solid #ececec;
+}
+
+.submenu__link {
+  min-width: 185px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-black;
+}
