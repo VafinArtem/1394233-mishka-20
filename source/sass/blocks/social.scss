@@ -22,6 +22,7 @@
   flex-wrap: wrap;
   min-width: 142px;
   min-height: 28px;
+
   @include list-none;
 
   @media (min-width: $tablet-width) {
