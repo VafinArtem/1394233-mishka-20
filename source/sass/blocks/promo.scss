@@ -22,6 +22,13 @@
 
 .promo__list {
   @include list-none;
+  margin-bottom: 30px;
+
+  &:hover,
+  &:focus,
+  &:active {
+    margin-bottom: 24px;
+  }
 }
 
 .promo__item {
