@@ -37,12 +37,12 @@ exports.styles = styles;
 
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.mozjpeg({quality: 90, progressive: true}),
-    imagemin.svgo()
-  ]))
-  .pipe(gulp.dest("build/img"))
+    .pipe(imagemin([
+      // imagemin.optipng({optimizationLevel: 3}),
+      // imagemin.mozjpeg({quality: 90, progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.images = images;
@@ -51,9 +51,9 @@ exports.images = images;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-  .pipe(svgstore())
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"))
 }
 
 exports.sprite = sprite;
@@ -62,8 +62,8 @@ exports.sprite = sprite;
 
 const iwebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img"))
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.webp = iwebp;
@@ -77,7 +77,7 @@ const copy = () => {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("build"))
 }
 
 exports.copy = copy;
@@ -86,9 +86,9 @@ exports.copy = copy;
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest("build"))
-  .pipe(sync.stream())
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("build"))
+    .pipe(sync.stream())
 }
 
 exports.html = html;
@@ -115,7 +115,7 @@ exports.clean = clean;
 
 // Build
 
-const build = (done) => gulp.series (clean, copy, styles, html, js, sprite)(done);
+const build = (done) => gulp.series(clean, copy, styles, html, js, sprite)(done);
 exports.build = build;
 
 // Server
