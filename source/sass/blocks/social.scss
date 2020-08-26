@@ -48,24 +48,24 @@
 }
 
 .social__img {
-  fill: #666666;
+  fill: $basic-black;
 }
 
 .social__link {
   outline: none;
 
-  // &:hover,
-  // &:focus {
-  //   .social__img {
-  //     fill: $special-green;
-  //   }
-  // }
+  &:hover,
+  &:focus {
+    .social__img {
+      fill: $special-green-3;
+    }
+  }
 
-  // &:active {
-  //   .social__img {
-  //     fill: transparentize($special-green, 0.3);
-  //   }
-  // }
+  &:active {
+    .social__img {
+      fill: transparentize($special-green, 0.3);
+    }
+  }
 
   &--twitter {
     @media (min-width: $tablet-width) {
