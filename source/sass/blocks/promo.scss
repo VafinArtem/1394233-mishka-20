@@ -22,22 +22,32 @@
 
 .promo__list {
   @include list-none;
+
   margin-bottom: 30px;
 
   &:hover,
   &:focus,
   &:active {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
   }
 }
 
 .promo__item {
+  position: relative;
+  height: 103px;
+
+  &:hover {
+    height: 108px;
+  }
+
   &:nth-child(odd) {
     background-color: $basic-green;
 
     &:focus,
     &:hover {
+      margin-bottom: -5px;
       background-color: $special-green-2;
+      z-index: 2;
     }
   }
 
@@ -46,13 +56,14 @@
 
     &:focus,
     &:hover {
+      margin-top: -5px;
       background-color: $special-green-3;
+      z-index: 2;
     }
   }
 }
 
 .promo__link {
-  position: relative;
   display: block;
   min-height: 103px;
   padding: 0 30px;
@@ -65,7 +76,7 @@
 
   &:hover,
   &:focus {
-    min-height: 109px;
+    min-height: 108px;
     padding-top: 20px;
 
     & .promo__img {
