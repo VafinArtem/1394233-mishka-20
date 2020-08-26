@@ -16,10 +16,6 @@
   font-size: 19px;
   line-height: 18px;
   color: $basic-black;
-
-  // &:active {
-  //   color: transparentize($special-dark-grey, 0.3);
-  // }
 }
 
 .copyright__icon {
@@ -31,16 +27,16 @@
 .copyright__img {
   outline: none;
 
-  // &:hover,
-  // &:focus {
-  //   .copyright__icon {
-  //     fill: $special-green;
-  //   }
-  // }
+  &:hover,
+  &:focus {
+    .copyright__icon {
+      fill: $special-green-3;
+    }
+  }
 
-  // &:active {
-  //   .copyright__icon {
-  //     fill: transparentize($special-green, 0.3);
-  //   }
-  // }
+  &:active {
+    .copyright__icon {
+      fill: transparentize($special-green-3, 0.3);
+    }
+  }
 }
