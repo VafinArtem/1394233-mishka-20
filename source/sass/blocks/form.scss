@@ -10,6 +10,10 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-green;
+
+  &--about {
+    padding-bottom: 29px;
+  }
 }
 
 .form__list {
@@ -36,6 +40,11 @@
 .form__name {
   position: relative;
   display: flex;
+  flex-direction: column;
+
+  &--about {
+    padding-bottom: 22px;
+  }
 }
 
 .form__radio,
@@ -164,5 +173,34 @@
   &--check {
     width: 156px;
     margin-left: 61px;
+  }
+}
+
+.form__input {
+  height: 52px;
+  padding: 0;
+  font-family: "Open Sans", "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: $special-grey-dark;
+  border: none;
+  box-shadow: inset 0px -2px 0px $basic-black;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: inset 0px -2px 0px $basic-green;
+  }
+
+  &::placeholder {
+    font-family: "Open Sans", "Tahoma", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 18px;
+    color: $special-grey-adv;
   }
 }
