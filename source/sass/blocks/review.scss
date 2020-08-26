@@ -39,6 +39,8 @@
   height: 52px;
   border: 1px solid $special-grey;
   background-color: $basic-white;
+  outline: none;
+  cursor: pointer;
 
   &--previous {
     border-right: none;
@@ -46,5 +48,18 @@
 
   &--next {
     border-left: 1px solid $special-grey;
+  }
+
+  &:hover,
+  &:focus {
+    & .review__img {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    & .review__img {
+      opacity: 0.3;
+    }
   }
 }
