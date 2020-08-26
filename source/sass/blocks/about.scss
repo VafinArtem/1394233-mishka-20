@@ -72,4 +72,10 @@
       background-image: url("../../img/icon-feature-gift.svg");
     }
   }
+
+  @media (min-width: $mobile-width-rubber) {
+    br {
+      display: none;
+    }
+  }
 }
