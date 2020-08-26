@@ -47,8 +47,8 @@
         свяжемся с вами, чтобы уточнить детали.</p>
       <form action="https://echo.htmlacademy.ru" method="GET" class="order__form form container">
         <fieldset class="form__block form__block--type">
-          <legend class="form__title">Тип</legend>
-          <ul class="form__list">
+          <legend class="form__title title">Тип</legend>
+          <ul class="form__list form__list--type">
             <li class="form__item">
               <label class="form__name form__name--radio">
                 <input class="form__radio" type="radio" name="type" value="accessory" checked>
@@ -66,7 +66,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__block form__block--color">
-          <legend class="title form__title form__title--color">ЦВет</legend>
+          <legend class="title form__title">ЦВет</legend>
           <ul class="form__list form__list--color">
             <li class="form__item form__item--color">
               <label class="form__name form__name--color">
@@ -113,7 +113,7 @@
           </ul>
         </fieldset>
         <fieldset class="form__block form__block--about">
-          <legend class="visually-hidden">ФИО</legend>
+          <legend class="title form__title form__title--about">ФИО</legend>
           <label class="form__name form__name--about">
             <span class="form__description form__description--about">Имя:</span>
             <input type="text" class="form__input form__input--required" name="name" placeholder="Введите ваше имя*"
@@ -141,10 +141,10 @@
             </svg>
           </label>
         </fieldset>
-        <fieldset class="form__block form__block--phone">
-          <label class="form__name form__name--contact">
-            <span class="form__description">Телефон:*</span>
-            <input type="email" class="form__input form__input--contact form__input--required" name="email"
+        <fieldset class="form__block form__block--email">
+          <legend class="title form__title form__title--email">E-mail</legend>
+          <label class="form__name form__name--email">
+            <input type="email" class="form__input form__input--email form__input--required" name="email"
               placeholder="Ваш Email*" required>
             <svg width="32" height="21" class="form__img">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -154,7 +154,7 @@
         <fieldset class="form__block form__block--comment">
           <legend class="title form__title form__title--comment">Доп</legend>
           <label class="visually-hidden" for="comment">Напишите комментарий</label>
-          <textarea class="form__input form__input--comment" name="comment" id="comment" cols="30" rows="10"
+          <textarea class="form__input form__input--comment" name="comment" id="comment"
             placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
         <div class="form__inner form__inner--btn">
