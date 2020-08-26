@@ -13,8 +13,63 @@
 }
 
 .about__text {
+  position: relative;
   margin: 0;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+
+  &::before {
+    @include pseudo;
+    top: -48px;
+    background-repeat: no-repeat;
+  }
+
+  &--eco {
+    &::before {
+      width: 33px;
+      height: 38px;
+      background-image: url("../../img/icon-feature-flower.svg");
+    }
+  }
+
+  &--cost {
+    &::before {
+      width: 46px;
+      height: 27px;
+      background-image: url("../../img/icon-feature-money.svg");
+    }
+  }
+
+  &--like {
+    &::before {
+      width: 34px;
+      height: 27px;
+      background-image: url("../../img/icon-feature-heart.svg");
+    }
+  }
+
+  &--handmade {
+    &::before {
+      width: 35px;
+      height: 34px;
+      background-image: url("../../img/icon-feature-ball.svg");
+    }
+  }
+
+  &--support {
+    &::before {
+      width: 55px;
+      height: 23px;
+      background-image: url("../../img/icon-feature-rocket.svg");
+    }
+  }
+
+  &--gift {
+    &::before {
+      width: 33px;
+      height: 32px;
+      background-image: url("../../img/icon-feature-gift.svg");
+    }
+  }
 }
