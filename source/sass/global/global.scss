@@ -72,10 +72,11 @@ a {
   background-color: $basic-white;
   outline: none;
 
-  // &:hover,
-  // &:focus {
-  //   background-color: $special-green;
-  // }
+  &:hover,
+  &:focus {
+    color: $basic-white;
+    background-color: $special-grey-dark;
+  }
 
   &:active {
     color: transparentize($basic-white, 0.3);
