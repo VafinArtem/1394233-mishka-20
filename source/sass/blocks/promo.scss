@@ -27,14 +27,25 @@
 .promo__item {
   &:nth-child(odd) {
     background-color: $basic-green;
+
+    &:focus,
+    &:hover {
+      background-color: $special-green-2;
+    }
   }
 
   &:nth-child(even) {
     background-color: $special-green;
+
+    &:focus,
+    &:hover {
+      background-color: $special-green-3;
+    }
   }
 }
 
 .promo__link {
+  position: relative;
   display: block;
   min-height: 103px;
   padding: 0 30px;
@@ -45,8 +56,26 @@
   color: $basic-white;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     min-height: 109px;
     padding-top: 20px;
+
+    & .promo__img {
+      opacity: 0.7;
+    }
   }
+
+  &:active {
+    & .promo__img {
+      opacity: 0.3;
+    }
+  }
+}
+
+.promo__img {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  fill: $special-green-dark;
 }
