@@ -2,14 +2,40 @@
   padding: 0 30px;
   padding-top: 30px;
   padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
 }
 
 .about__list {
   @include list-none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 30px;
+  }
 }
 
 .about__item {
   padding-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+
+    &--cost {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    &--like {
+      grid-column: 1/2;
+      grid-row: 3/4;
+    }
+  }
 }
 
 .about__text {
@@ -18,6 +44,21 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+
+  @media (min-width: $mobile-width-rubber) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+
+    br {
+      display: inline;
+    }
+  }
 
   &::before {
     @include pseudo;
@@ -47,6 +88,9 @@
       height: 27px;
       background-image: url("../../img/icon-feature-heart.svg");
     }
+
+    @media (min-width: $tablet-width) {
+    }
   }
 
   &--handmade {
@@ -70,12 +114,6 @@
       width: 33px;
       height: 32px;
       background-image: url("../../img/icon-feature-gift.svg");
-    }
-  }
-
-  @media (min-width: $mobile-width-rubber) {
-    br {
-      display: none;
     }
   }
 }
