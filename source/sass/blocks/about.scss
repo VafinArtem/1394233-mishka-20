@@ -4,6 +4,8 @@
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     padding: 0 50px;
     padding-top: 30px;
     padding-bottom: 60px;
@@ -14,8 +16,9 @@
   @include list-none;
 
   @media (min-width: $tablet-width) {
+    align-self: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 334px 334px;
     padding-top: 30px;
   }
 }
