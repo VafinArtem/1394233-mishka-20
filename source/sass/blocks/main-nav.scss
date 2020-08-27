@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: min-content;
+    grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
   }
 
@@ -122,9 +122,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-weight: bold;
+    width: auto;
     font-size: 15px;
-    line-height: 24px;
     outline: none;
   }
 
