@@ -1,3 +1,7 @@
+.properties {
+  margin: 0;
+}
+
 .properties__wrapper {
   display: flex;
   justify-content: space-between;
@@ -8,12 +12,9 @@
   border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 0 1px;
-    padding-bottom: 7px;
-
-    &:not(:first-child) {
-      padding-top: 8px;
-    }
+    align-items: center;
+    width: auto;
+    min-height: 40px;
   }
 }
 
