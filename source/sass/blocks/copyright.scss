@@ -3,11 +3,6 @@
   justify-content: center;
   align-items: center;
   min-height: 78px;
-
-  @media (min-width: $tablet-width) {
-    width: 163px;
-    padding: 0;
-  }
 }
 
 .copyright__text {

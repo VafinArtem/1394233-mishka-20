@@ -31,10 +31,8 @@
   }
 
   &--footer {
-    margin: 0 auto;
-    margin-bottom: 32px;
-    width: 128px;
-    height: 23.42px;
+    // width: 102px;
+    // height: 34px;
 
     @media (max-width: $mobile-width-only) {
       display: none;

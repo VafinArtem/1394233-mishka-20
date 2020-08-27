@@ -9,9 +9,9 @@
   border-bottom: 1px solid $special-grey-mid;
 
   @media (min-width: $tablet-width) {
-    height: auto;
-    margin-left: 23px;
-    border: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -24,10 +24,6 @@
   min-height: 28px;
 
   @include list-none;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 6px;
-  }
 }
 
 .social__item {

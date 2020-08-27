@@ -1,3 +1,22 @@
 .page-footer {
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content 143px;
+  }
+}
+
+.page-footer__contacts {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding-left: 50px;
+  }
 }
