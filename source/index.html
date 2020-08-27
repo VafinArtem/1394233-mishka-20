@@ -100,7 +100,7 @@
       <p class="featured__text featured__text--cost">Цена: 990 руб.</p>
       <button class="featured__button button">ЗАКАЗАТЬ</button>
     </section>
-    <section class="about">
+    <section class="about container">
       <h2 class="about__title title">Коротко о нас:</h2>
       <ul class="about__list">
         <li class="about__item">
@@ -123,34 +123,37 @@
         </li>
       </ul>
     </section>
-    <section class="review">
-      <h2 class="review__title title">Отзывы</h2>
-      <ul class="review__list">
-        <li class="review__item">
-          <blockquote class="review__quote">
-            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-              лайков,
-              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-              и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-              больше лайков!</p>
-            <cite class="review__autor">Анастасия Красильникова<br><span
-                class="review__autor--social">@misssssiskras</span></cite>
-          </blockquote>
-        </li>
-      </ul>
-      <div class="review__inner">
-        <button class="review__button review__button--previous">
-          <svg class="review__img review__img--previous" width="50" height="26">
-            <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
-          </svg>
-          <span class="visually-hidden">предыдущий отзыв</span>
-        </button>
-        <button class="review__button review__button--next">
-          <svg class="review__img review__img--next" width="50" height="26">
-            <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
-          </svg>
-          <span class="visually-hidden">следующий отзыв</span>
-        </button>
+    <section class="review container">
+      <div class="review__wrapper">
+        <h2 class="review__title title">Отзывы</h2>
+        <ul class="review__list">
+          <li class="review__item">
+            <blockquote class="review__quote">
+              <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков,
+                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!</p>
+              <cite class="review__autor">Анастасия Красильникова<br><span
+                  class="review__autor--social">@misssssiskras</span></cite>
+            </blockquote>
+          </li>
+        </ul>
+        <div class="review__inner">
+          <button class="review__control review__control--previous">
+            <svg class="review__img review__img--previous" width="50" height="26">
+              <use xlink:href="img/sprite.svg#icon-left-arrow"></use>
+            </svg>
+            <span class="visually-hidden">предыдущий отзыв</span>
+          </button>
+          <button class="review__control review__control--next">
+            <svg class="review__img review__img--next" width="50" height="26">
+              <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+            </svg>
+            <span class="visually-hidden">следующий отзыв</span>
+          </button>
+        </div>
+        <a href="#" class="review__button button">Написать</a>
       </div>
     </section>
   </main>
