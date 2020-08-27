@@ -1,13 +1,28 @@
 .featured {
+  position: relative;
   display: grid;
+  justify-content: center;
   padding: 30px 30px;
   padding-top: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 292px 1fr;
+    grid-template-columns: 292px max-content;
     grid-template-rows: min-content;
     column-gap: 42px;
     padding: 0 50px;
+    padding-bottom: 30px;
+
+    &::after {
+      @include pseudo;
+
+      top: 100%;
+      width: 100%;
+      height: 17px;
+      background-image: url("../../img/bg-zigzag-line-min.svg");
+      background-repeat: repeat;
+      z-index: 10;
+    }
   }
 }
 
@@ -40,8 +55,6 @@
 }
 
 .featured__box {
-  text-align: center;
-
   @media (min-width: $tablet-width) {
     grid-row: 2/6;
     grid-column: 2/3;
@@ -51,6 +64,7 @@
 
 .featured__img {
   display: block;
+  margin: 0 auto;
 }
 
 .featured__text {
