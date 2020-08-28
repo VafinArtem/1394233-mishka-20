@@ -1,7 +1,12 @@
 .contacts {
+  display: none;
   padding-top: 30px;
   padding-bottom: 40px;
   background-color: $basic-white;
+
+  &--index {
+    display: block;
+  }
 }
 
 .contacts__wrapper {
