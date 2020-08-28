@@ -1,5 +1,10 @@
 .production {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content;
+  }
 }
 
 .production__wrapper {
@@ -10,6 +15,11 @@
 
   &:first-child {
     border-bottom: none;
+
+    @media (min-width: $tablet-width) {
+      grid-row: 2/3;
+      padding-top: 41px;
+    }
   }
 
   &:last-child {
@@ -34,6 +44,17 @@
     height: 32px;
     background-image: url("../../img/icon-video.svg");
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-left: 50px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: -6px;
+    }
   }
 }
 
