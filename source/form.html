@@ -26,30 +26,28 @@
         </button>
       </div>
       <ul class="main-nav__list main-nav__list--no-js js-menu">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">Вязание на заказ</a>
-        </li>
+        <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
       </ul>
     </nav>
     <div class="page-header__submenu submenu">
-      <div class="submenu__item">
-        <a href="#" class="submenu__link">Поиск по сайту
-          <svg width="16" height="18" class="submenu__img">
+      <div class="submenu__item submenu__item--search">
+        <a href="#" class="submenu__link">
+          <span class="submenu__text submenu__text--search">Поиск по сайту</span>
+          <svg width="16" height="18" class="submenu__img submenu__img--search">
             <use xlink:href="img/sprite.svg#icon-search"></use>
           </svg>
         </a>
       </div>
       <div class="submenu__item">
-        <a href="#" class="submenu__link">Корзина: пока пуста
+        <a href="#" class="submenu__link submenu__link--cart">Корзина: пока пуста
           <svg width="21" height="18" class="submenu__img">
             <use xlink:href="img/sprite.svg#icon-cart"></use>
           </svg>
         </a>
       </div>
     </div>
+    <p class="page-header__text">Бесплатная доставка по России</p>
   </header>
 
   <main class="page-main">
@@ -174,15 +172,18 @@
   </main>
 
   <footer class="page-footer">
-    <section class="contacts">
-      <h2 class="contacts__title title container">Контакты</h2>
+    <section class="page-footer__contacts contacts">
       <div class="contacts__wrapper container">
-        <p class="contacts__text">e-mail:</p>
-        <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-      </div>
-      <div class="contacts__wrapper container">
-        <p class="contacts__text">адрес:</p>
-        <p class="contacts__text">г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101</p>
+        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__inner">
+          <p class="contacts__text">e-mail:</p>
+          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </div>
+        <div class="contacts__inner">
+          <p class="contacts__text">адрес:</p>
+          <p class="contacts__text contacts__text--desc">г. Санкт-Петербург, <br>ул. Большая
+            Конюшенная, д. 19/8, офис 101</p>
+        </div>
       </div>
       <div class="contacts__map">
         <div class="contacts__img">
@@ -194,14 +195,14 @@
           </picture>
         </div>
       </div>
-      <div class="contacts__wrapper">
-        <button class="contacts__button button container">НАпишите нам</button>
+      <div class="contacts__inner">
+        <a href="#" class="contacts__button button">НАпишите нам</a>
       </div>
     </section>
-    <a class="logo logo--footer">
+    <a href="index.html" class="page-footer__logo logo logo--footer">
       <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин Мишка">
     </a>
-    <section class="social container">
+    <section class="page-footer__social social">
       <h2 class="visually-hidden">Наши социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
@@ -227,7 +228,7 @@
         </li>
       </ul>
     </section>
-    <section class="copyright container">
+    <section class="page-footer__copyright copyright">
       <h2 class="visually-hidden">Копирайты</h2>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text">Разработано</a>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__img" aria-label="HTML Academy">
