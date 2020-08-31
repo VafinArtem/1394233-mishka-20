@@ -22,6 +22,10 @@
       z-index: 10;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    background-position-x: 50px;
+  }
 }
 
 .review__wrapper {
@@ -32,6 +36,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content;
     padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 224px;
   }
 }
 
