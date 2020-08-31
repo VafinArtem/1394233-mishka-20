@@ -29,6 +29,16 @@
   row-gap: 30px;
   // justify-items: center;
   padding: 30px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 51px;
+    margin: 0 auto;
+  }
 }
 
 .catalog__item {
@@ -37,6 +47,11 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 316px;
+    grid-template-rows: min-content 197px;
   }
 }
 
