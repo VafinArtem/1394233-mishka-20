@@ -1,0 +1,26 @@
+.add-menu__list {
+  @include list-none;
+
+  display: flex;
+  width: 430px;
+}
+
+.add-menu__item {
+  flex-grow: 1;
+}
+
+.add-menu__link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $basic-black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
