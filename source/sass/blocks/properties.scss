@@ -5,16 +5,15 @@
 .properties__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  min-height: 40px;
+  padding-bottom: 4px;
   border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
-    align-items: center;
     width: auto;
-    min-height: 40px;
   }
 }
 

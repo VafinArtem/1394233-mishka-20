@@ -53,12 +53,12 @@
 .promo__list {
   @include list-none;
 
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   &:hover,
   &:focus,
   &:active {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   @media (min-width: $tablet-width) {
