@@ -1,29 +1,21 @@
 .contacts {
-  display: none;
-  padding-top: 30px;
+  padding-top: 45px;
   padding-bottom: 40px;
   background-color: $basic-white;
 
-  &--index {
-    display: block;
-  }
-
   @media (min-width: $desktop-width) {
-    display: none;
+    display: grid;
     grid-template-columns: 1fr 527px;
     padding-left: 224px;
     padding-right: 50px;
     padding-top: 60px;
-
-    &--index {
-      display: grid;
-    }
   }
 }
 
 .contacts__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 0 30px;
-  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -42,6 +34,8 @@
 }
 
 .contacts__title {
+  font-size: 18px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
   }
@@ -49,7 +43,11 @@
 
 .contacts__inner {
   display: flex;
-  padding-top: 40px;
+  padding-top: 28px;
+
+  &--btn {
+    padding-top: 39px;
+  }
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
@@ -62,11 +60,15 @@
 }
 
 .contacts__text {
-  min-width: 70px;
+  width: 76px;
   margin: 0;
   font-size: 15px;
   line-height: 30px;
   color: $special-grey-dark;
+
+  &--desc {
+    width: 155px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -81,7 +83,7 @@
   display: block;
   margin-bottom: auto;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 26px;
   color: $special-grey-dark;
   border-bottom: 1px solid $special-green-1;
 
@@ -109,7 +111,7 @@
 }
 
 .contacts__map {
-  padding-top: 30px;
+  padding-top: 34px;
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
