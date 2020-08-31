@@ -3,6 +3,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 44px;
+
+  &::after {
+    @include pseudo;
+
+    top: 100%;
+    width: 100%;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line-min.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: 10;
+  }
 
   @media (min-width: $tablet-width) {
     height: 457px;
@@ -11,15 +24,8 @@
     background-position: left;
 
     &::after {
-      @include pseudo;
-
-      top: 100%;
-      width: 100%;
       height: 17px;
       margin-top: 35px;
-      background-image: url("../../img/bg-zigzag-line-min.svg");
-      background-repeat: repeat;
-      z-index: 10;
     }
   }
 
@@ -50,7 +56,8 @@
 
 .review__list {
   @include list-none;
-  padding-top: 20px;
+
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
@@ -73,7 +80,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 28px;
 
   &--social {
     font-weight: normal;
@@ -82,7 +89,8 @@
 
 .review__inner {
   display: flex;
-  padding-top: 30px;
+  padding-top: 31px;
+  padding-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
@@ -95,6 +103,8 @@
 .review__control {
   width: 130px;
   height: 52px;
+  padding: 0;
+  padding-right: 3px;
   border: 1px solid $special-grey;
   background-color: $basic-white;
   outline: none;
