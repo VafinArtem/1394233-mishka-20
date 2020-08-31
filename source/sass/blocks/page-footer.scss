@@ -11,6 +11,11 @@
       grid-template-rows: min-content 143px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__contacts {
