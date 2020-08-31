@@ -4,6 +4,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: min-content;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 683px 1fr;
+    grid-template-rows: min-content min-content;
   }
 }
 
@@ -19,6 +25,10 @@
     @media (min-width: $tablet-width) {
       grid-row: 2/3;
       padding-top: 41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-row: 1/2;
     }
   }
 
@@ -72,4 +82,11 @@
 
 .production__button {
   width: 100%;
+}
+
+.production__video {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
 }
