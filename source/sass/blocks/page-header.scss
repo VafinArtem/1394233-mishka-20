@@ -1,5 +1,6 @@
 .page-header {
   @media (min-width: $tablet-width) {
+    // width: 100%;
     display: grid;
     grid-template-columns: 320px 1fr;
     grid-template-rows: min-content min-content;
@@ -7,6 +8,13 @@
     margin: 0 auto;
     margin-bottom: -67px;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 1150px;
+    grid-template-columns: 1fr 350px;
+    grid-template-rows: min-content min-content;
   }
 }
 
@@ -17,6 +25,7 @@
 }
 
 .page-header__text {
+  margin: 0;
   text-align: right;
   font-weight: normal;
   font-size: 15px;
