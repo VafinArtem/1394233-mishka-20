@@ -2,9 +2,21 @@
   position: relative;
   display: grid;
   justify-content: center;
-  padding: 30px 30px;
+  padding: 35px 30px;
   padding-top: 0;
   margin: 0 auto;
+
+  &::after {
+    @include pseudo;
+
+    top: 100%;
+    width: 100%;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line-min.svg");
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: 10;
+  }
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 292px max-content;
@@ -14,14 +26,7 @@
     padding-bottom: 30px;
 
     &::after {
-      @include pseudo;
-
-      top: 100%;
-      width: 100%;
       height: 17px;
-      background-image: url("../../img/bg-zigzag-line-min.svg");
-      background-repeat: repeat;
-      z-index: 10;
     }
   }
 
