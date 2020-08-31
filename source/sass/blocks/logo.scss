@@ -12,21 +12,13 @@
   }
 
   &--header {
-    width: 85.97px;
-    height: 34.92px;
-    margin-bottom: 4px;
+    padding-top: 3px;
+    padding-left: 19px;
 
     @include push--auto;
 
     @media (min-width: $tablet-width) {
-      width: 113.01px;
-      height: 45.96px;
       margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 149px;
-      height: 72px;
     }
   }
 
@@ -38,5 +30,20 @@
     @media (min-width: $tablet-width) {
       margin: 0;
     }
+  }
+}
+
+.logo__img {
+  width: 85.97px;
+  height: 34.92px;
+
+  @media (min-width: $tablet-width) {
+    width: 113.01px;
+    height: 45.96px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
   }
 }

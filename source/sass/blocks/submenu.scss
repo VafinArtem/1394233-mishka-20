@@ -20,7 +20,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 79px;
+  padding-left: 16px;
   border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
@@ -36,8 +37,8 @@
 
 .submenu__img {
   position: absolute;
-  top: 2px;
-  left: -25px;
+  top: 4px;
+  left: -45px;
   fill: $special-grey-adv-1;
 
   @media (min-width: $tablet-width) {
