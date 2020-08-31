@@ -1,6 +1,6 @@
 .about {
   padding: 0 30px;
-  padding-top: 30px;
+  padding-top: 38px;
   padding-bottom: 60px;
 
   @media (min-width: $tablet-width) {
@@ -30,7 +30,7 @@
 }
 
 .about__item {
-  padding-top: 55px;
+  padding-top: 83px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 25px;
@@ -71,12 +71,14 @@
 
   &::before {
     @include pseudo;
-    top: -48px;
+
+    top: -54px;
     background-repeat: no-repeat;
   }
 
   &--eco {
     &::before {
+      left: 8px;
       width: 33px;
       height: 38px;
       background-image: url("../../img/icon-feature-flower.svg");
@@ -85,7 +87,7 @@
 
   &--cost {
     &::before {
-      width: 46px;
+      width: 47px;
       height: 27px;
       background-image: url("../../img/icon-feature-money.svg");
     }
@@ -93,6 +95,8 @@
 
   &--like {
     &::before {
+      left: 8px;
+      top: -49px;
       width: 34px;
       height: 27px;
       background-image: url("../../img/icon-feature-heart.svg");
@@ -101,6 +105,8 @@
 
   &--handmade {
     &::before {
+      top: -52px;
+      left: 4px;
       width: 35px;
       height: 34px;
       background-image: url("../../img/icon-feature-ball.svg");
@@ -109,6 +115,8 @@
 
   &--support {
     &::before {
+      top: -51px;
+      left: -5px;
       width: 55px;
       height: 23px;
       background-image: url("../../img/icon-feature-rocket.svg");
@@ -117,6 +125,7 @@
 
   &--gift {
     &::before {
+      left: 3px;
       width: 33px;
       height: 32px;
       background-image: url("../../img/icon-feature-gift.svg");
