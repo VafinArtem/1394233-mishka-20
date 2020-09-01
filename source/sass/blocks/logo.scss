@@ -12,9 +12,6 @@
   }
 
   &--header {
-    padding-top: 3px;
-    padding-left: 19px;
-
     @include push--auto;
 
     @media (min-width: $tablet-width) {

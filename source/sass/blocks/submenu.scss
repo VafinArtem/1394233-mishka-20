@@ -7,11 +7,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     width: 348px;
-    height: 65px;
+    height: 89px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 88px;
+    height: 89px;
   }
 }
 
@@ -26,11 +26,17 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    height: 100%;
+    padding-left: 2px;
+    padding-top: 2px;
+    border-bottom: none;
+    border-left: 1px solid $special-grey;
 
     &--search {
       flex-grow: 0;
       justify-content: center;
       width: 83px;
+      padding-top: 7px;
     }
   }
 }
@@ -42,7 +48,8 @@
   fill: $special-grey-adv-1;
 
   @media (min-width: $tablet-width) {
-    left: -30px;
+    top: 2px;
+    left: -52px;
 
     &--search {
       position: static;
