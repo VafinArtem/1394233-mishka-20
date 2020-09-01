@@ -23,7 +23,7 @@
     grid-template-rows: min-content;
     column-gap: 42px;
     padding: 0 50px;
-    padding-bottom: 30px;
+    padding-bottom: 52px;
 
     &::after {
       height: 17px;
@@ -66,6 +66,8 @@
     grid-column: 2/3;
     justify-self: end;
     width: 100px;
+    padding-right: 25px;
+    line-height: 18px;
     text-align: center;
   }
 
@@ -115,14 +117,15 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 44px;
+    padding-bottom: 40px;
     font-size: 17px;
     line-height: 30px;
 
     &--cost {
       grid-row: 4/5;
       padding: 0;
-      padding-bottom: 33px;
+      padding-right: 4px;
+      padding-bottom: 32px;
       font-size: 20px;
       line-height: 24px;
     }
@@ -138,7 +141,8 @@
   padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 27px;
+    padding: 0;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
