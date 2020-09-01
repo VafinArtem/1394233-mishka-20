@@ -1,5 +1,9 @@
 .order {
   padding-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .order__title {
