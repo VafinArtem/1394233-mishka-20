@@ -3,15 +3,12 @@
   justify-content: center;
   align-items: center;
   min-height: 28px;
-  margin: 0 30px;
-  padding-top: 25px;
-  padding-bottom: 23px;
+
   border-bottom: 1px solid $special-grey-mid;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-start;
     border: none;
-    padding: 0;
-    margin: 0;
   }
 }
 
@@ -24,6 +21,9 @@
   min-height: 28px;
 
   @include list-none;
+
+  @media (min-width: $tablet-width) {
+  }
 }
 
 .social__item {
@@ -37,8 +37,7 @@
 
   @media (min-width: $tablet-width) {
     &:not(:last-child) {
-      padding-top: 3px;
-      margin-right: 29px;
+      margin-right: 40px;
     }
   }
 }
