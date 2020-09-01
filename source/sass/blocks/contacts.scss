@@ -3,6 +3,10 @@
   padding-bottom: 40px;
   background-color: $basic-white;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 57px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 527px;
@@ -22,7 +26,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content;
     padding: 0 50px;
-    padding-top: 40px;
+    padding-top: 109px;
   }
 
   @media (min-width: $desktop-width) {
@@ -38,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;
+    font-size: 43px;
   }
 }
 
@@ -51,6 +56,11 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
+    padding-top: 50px;
+
+    &--btn {
+      padding-top: 52px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -68,6 +78,12 @@
 
   &--desc {
     width: 155px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -104,6 +120,10 @@
 .contacts__button {
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 292px;
     margin-top: auto;
@@ -112,6 +132,10 @@
 
 .contacts__map {
   padding-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
