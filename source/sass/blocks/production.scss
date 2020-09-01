@@ -6,6 +6,7 @@
     display: grid;
     grid-template-rows: min-content;
     padding: 0 50px;
+    padding-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,6 +26,11 @@
     padding: 0 40px;
     padding-top: 21px;
     padding-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 41px;
+      padding-bottom: 23px;
+    }
   }
 
   &:first-child {
@@ -32,7 +38,6 @@
 
     @media (min-width: $tablet-width) {
       grid-row: 2/3;
-      padding-top: 41px;
     }
 
     @media (min-width: $desktop-width) {
@@ -44,6 +49,13 @@
     padding-top: 35px;
     padding-bottom: 33px;
     border-top: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      padding-left: 39px;
+      padding-right: 34px;
+      padding-bottom: 45px;
+    }
   }
 }
 
@@ -66,12 +78,13 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-left: 50px;
+    margin-left: 66px;
     font-size: 20px;
     line-height: 24px;
 
     &::before {
-      top: -6px;
+      left: -65px;
+      top: -8px;
     }
   }
 }
@@ -88,6 +101,11 @@
   padding-bottom: 41px;
   font-size: 13px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .production__button {
