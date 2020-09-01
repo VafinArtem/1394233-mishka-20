@@ -51,11 +51,6 @@
   }
 }
 
-.review__title {
-  @media (min-width: $tablet-width) {
-  }
-}
-
 .review__list {
   @include list-none;
 
