@@ -44,20 +44,20 @@
 .main-nav__toggle {
   padding: 0;
   width: 21px;
-  height: 21px;
+  height: 14px;
   border: none;
   background: none;
-  background-image: url("../img/icon-menu-close.svg");
+  background-image: url("../img/icon-menu-open.svg");
   background-repeat: no-repeat;
 
   &--active {
-    width: 20px;
-    height: 14px;
-    background-image: url("../img/icon-menu-open.svg");
+    width: 21px;
+    height: 21px;
+    background-image: url("../img/icon-menu-close.svg");
   }
 
   &--no-js {
-    display: block;
+    display: none;
   }
 
   @media (min-width: $tablet-width) {

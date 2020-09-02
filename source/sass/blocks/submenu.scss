@@ -1,18 +1,22 @@
 .submenu {
-  display: block;
+  display: none;
   min-width: 100%;
   list-style: none;
   padding: 0;
+
+  &--active {
+    display: block;
+  }
+
+  &--no-js {
+    display: block;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: 348px;
     height: 89px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   height: 89px;
-  // }
 }
 
 .submenu__item {
