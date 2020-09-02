@@ -9,10 +9,13 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 527px;
+    grid-template-columns: min-content 527px;
+    column-gap: 34px;
+    width: 1150px;
     padding-left: 224px;
     padding-right: 50px;
-    padding-top: 60px;
+    padding-top: 161px;
+    padding-bottom: 102px;
   }
 }
 
@@ -31,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: min-content;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
     width: auto;
     padding: 0;
   }
@@ -56,6 +59,20 @@
       background-image: url("../../img/icon-flag.svg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 79px;
+    padding-bottom: 36px;
+    font-size: 53px;
+
+    &::after {
+      left: auto;
+      right: 100%;
+      margin-bottom: -143px;
+      margin-left: 0;
+      margin-right: 64px;
+    }
+  }
 }
 
 .contacts__inner {
@@ -78,6 +95,11 @@
   @media (min-width: $desktop-width) {
     grid-row: auto;
     padding: 0;
+    padding-bottom: 26px;
+
+    &--btn {
+      padding-bottom: 3px;
+    }
   }
 }
 
@@ -127,6 +149,10 @@
   &:active {
     border-bottom: 1px solid transparent;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .contacts__button {
@@ -137,7 +163,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 292px;
+    margin: 0;
     margin-top: auto;
   }
 }
