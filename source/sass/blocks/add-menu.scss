@@ -2,11 +2,13 @@
   @include list-none;
 
   display: flex;
-  width: 430px;
+  flex-wrap: wrap;
 }
 
 .add-menu__item {
-  flex-grow: 1;
+  &:not(:last-child) {
+    padding-right: 63px;
+  }
 }
 
 .add-menu__link {

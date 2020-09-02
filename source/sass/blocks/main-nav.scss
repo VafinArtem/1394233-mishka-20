@@ -9,6 +9,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: min-content min-content;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: min-content 1fr;
+  }
 }
 
 .main-nav__inner {
@@ -32,8 +36,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
-    height: 88px;
-    padding-left: 42px;
+    height: 89px;
+    padding-left: 20px;
   }
 }
 
@@ -111,7 +115,8 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    height: auto;
+    height: 89px;
+    padding: 0;
 
     &:first-child {
       border-right: 1px solid $special-grey;
@@ -150,7 +155,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 17px;
   }
 }

@@ -24,7 +24,6 @@
     grid-template-rows: min-content min-content;
     width: 100%;
     max-width: 1150px;
-    margin-bottom: -43px;
   }
 }
 
@@ -45,6 +44,10 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
+  }
 }
 
 .page-header__additional {
@@ -54,5 +57,6 @@
     display: block;
     grid-column: 1/2;
     padding-top: 19px;
+    height: 89px;
   }
 }
