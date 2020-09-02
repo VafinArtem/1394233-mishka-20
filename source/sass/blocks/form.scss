@@ -358,6 +358,10 @@
   &:focus,
   &:active {
     box-shadow: inset 0 -2px 0 $basic-green;
+
+    & + .form__img {
+      fill: $basic-green;
+    }
   }
 
   &::placeholder {
@@ -378,6 +382,7 @@
     padding: 16px 17px;
     border: 2px solid $special-grey-dark;
     box-shadow: none;
+    resize: none;
 
     &:hover,
     &:focus,
