@@ -42,11 +42,20 @@
     padding-left: 18px;
     padding-bottom: 4px;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 77px;
+  }
 }
 
 .page-footer__copyright {
   @media (min-width: $tablet-width) {
     padding-bottom: 7px;
     padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 50px;
   }
 }

@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   min-height: 78px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
 }
 
 .copyright__text {

@@ -10,6 +10,10 @@
     justify-content: flex-start;
     border: none;
   }
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .social__list {
