@@ -136,6 +136,7 @@
   line-height: 26px;
   color: $special-grey-dark;
   border-bottom: 1px solid $special-green-1;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
