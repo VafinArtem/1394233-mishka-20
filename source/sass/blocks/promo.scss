@@ -20,6 +20,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+
     &::after {
       height: 34px;
       background-size: contain;
