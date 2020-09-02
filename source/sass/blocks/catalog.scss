@@ -24,6 +24,17 @@
       z-index: 10;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    height: 261px;
+    padding: 0;
+    font-size: 53px;
+
+    &::after {
+      height: 34px;
+      background-size: contain;
+    }
+  }
 }
 
 .catalog__list {
@@ -44,6 +55,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 51px;
     margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 56px;
   }
 }
 
@@ -72,6 +85,11 @@
     display: flex;
     flex-direction: column;
     padding: 0 32px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 28px;
     padding-top: 27px;
   }
 }
@@ -122,6 +140,10 @@
     &--cost {
       font-size: 17px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
