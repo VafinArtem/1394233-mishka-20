@@ -183,10 +183,6 @@
 }
 
 .form__radio {
-  & + .form__box--radio {
-    border: 2px solid $special-grey-dark;
-  }
-
   &:hover,
   &:focus {
     & + .form__box--radio {
