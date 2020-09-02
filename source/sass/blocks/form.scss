@@ -46,10 +46,19 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 112px 1fr;
     width: 1150px;
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 225px;
+    padding-left: 112px;
     margin: 0 auto;
+
+    &--color {
+      padding-right: 159px;
+    }
+
+    &--comment {
+      padding-bottom: 49px;
+    }
   }
 }
 
@@ -106,6 +115,11 @@
       padding: 0;
       column-gap: 25px;
       row-gap: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 25px;
     }
   }
 
@@ -390,6 +404,10 @@
   @media (min-width: $tablet-width) {
     right: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
+  }
 }
 
 .form__inner {
@@ -405,6 +423,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
+    padding: 0 224px;
     margin: 0 auto;
   }
 }
