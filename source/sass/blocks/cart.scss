@@ -30,11 +30,22 @@
   border: 1px solid $special-grey-mid-2;
   background-color: $basic-white;
   box-shadow: 0px 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet-width) {
+    width: 566px;
+    padding: 0 108px;
+    padding-top: 38px;
+  }
 }
 
 .cart__title {
   width: 176px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 30px;
+  }
 }
 
 .cart__text {
@@ -47,6 +58,7 @@
 .cart__form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .cart__block {
@@ -67,9 +79,11 @@
 .cart__name {
   display: block;
   line-height: 0;
+  cursor: pointer;
 }
 
 .cart__btn {
+  width: 100%;
   margin-top: auto;
   border: none;
   color: $basic-white;
@@ -110,4 +124,8 @@
   font-size: 17px;
   line-height: 16px;
   border: 2px solid transparentize($special-grey-dark, 0.9);
+
+  @media (min-width: $tablet-width) {
+    width: 112px;
+  }
 }
