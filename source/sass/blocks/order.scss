@@ -32,6 +32,17 @@
       z-index: 10;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    height: 261px;
+    padding: 0;
+    font-size: 53px;
+
+    &::after {
+      height: 34px;
+      background-size: contain;
+    }
+  }
 }
 
 .order__text {
@@ -50,7 +61,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding: 0 224px;
+    padding-top: 109px;
     margin: 0 auto;
   }
 }
