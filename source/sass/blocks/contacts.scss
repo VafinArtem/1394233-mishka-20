@@ -168,16 +168,45 @@
   }
 }
 
-.contacts__map {
-  padding-top: 34px;
+.contacts__location {
+  display: grid;
+  height: 454px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 47px;
+    height: 457px;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/3;
-    padding: 0;
+    width: 527px;
+    margin: 0;
   }
+}
+
+.contacts__img {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  justify-self: center;
+  width: 322px;
+  height: 454px;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+  }
+}
+
+.contacts__map {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
 }

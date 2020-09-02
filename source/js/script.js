@@ -20,7 +20,6 @@ menuButton.addEventListener("click", function (evt) {
 }
 )
 
-
 function initMap() {
   let academy = { lat: 59.938635, lng: 30.323118 };
   let map = new google.maps.Map(
@@ -33,6 +32,6 @@ function initMap() {
   let marker = new google.maps.Marker({
     position: academy,
     map: map,
-    icon: "/img/map-pin.png"
+    icon: "/img/icon-map-pin.svg"
   });
 }

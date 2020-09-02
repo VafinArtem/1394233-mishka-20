@@ -175,7 +175,7 @@
             Конюшенная, д.&nbsp;19/8, офис 101</p>
         </div>
       </div>
-      <div class="contacts__map">
+      <div class="contacts__location">
         <div class="contacts__img">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
@@ -184,6 +184,7 @@
               alt="Карта как до нас джобраться по адресу г. Санкт-Петербург, ул. Большая Конюшенная,&nbsp;д. 19/8, офис 101">
           </picture>
         </div>
+        <div class="contacts__map" id="map"></div>
       </div>
       <div class="contacts__inner contacts__inner--btn">
         <a href="#" class="contacts__button button">НАпишите нам</a>
@@ -233,6 +234,8 @@
       </section>
     </div>
   </footer>
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACWVazVR6DDJXD3OIu_Gy28pedm4Br7NI&callback=initMap"></script>
   <script src="js/script.min.js"></script>
 </body>
 
