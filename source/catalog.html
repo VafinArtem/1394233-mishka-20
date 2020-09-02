@@ -74,7 +74,7 @@
             <p class="catalog__description">Рост 30 см, вес 200 г</p>
             <div class="catalog__inner">
               <p class="catalog__description catalog__description--cost">1 200 руб.</p>
-              <button class="catalog__button" type="submit">
+              <button class="catalog__button js-add-cart" type="submit">
                 <svg class="catalog__icon" width="20" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -97,7 +97,7 @@
             <p class="catalog__description">Диаметр 15 см, высота 10 см</p>
             <div class="catalog__inner">
               <p class="catalog__description catalog__description--cost">690 руб.</p>
-              <button class="catalog__button" type="submit">
+              <button class="catalog__button js-add-cart" type="submit">
                 <svg class="catalog__icon" width="20" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -120,7 +120,7 @@
             <p class="catalog__description">Диаметр 30 см, высота 30 см</p>
             <div class="catalog__inner">
               <p class="catalog__description catalog__description--cost">1 500 руб.</p>
-              <button class="catalog__button" type="submit">
+              <button class="catalog__button js-add-cart" type="submit">
                 <svg class="catalog__icon" width="20" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -192,6 +192,38 @@
       </section>
     </div>
   </footer>
+  <section class="cart">
+    <div class="cart__wrapper">
+      <h2 class="cart__title title">Добавить в корзину</h2>
+      <div class="cart__text">Выберите размер:</div>
+      <form action="https://echo.htmlacademy.ru" method="GET" class="cart__form">
+        <fieldset class="cart__block">
+          <legend class="visually-hidden">Размеры</legend>
+          <ul class="cart__list">
+            <li class="cart__item">
+              <label class="cart__name">
+                <input class="cart__check" type="checkbox" name="size" value="S">
+                <span class="cart__box">S</span>
+              </label>
+            </li>
+            <li class="cart__item">
+              <label class="cart__name">
+                <input class="cart__check" type="checkbox" name="size" value="M">
+                <span class="cart__box">M</span>
+              </label>
+            </li>
+            <li class="cart__item">
+              <label class="cart__name">
+                <input class="cart__check" type="checkbox" name="size" value="L">
+                <span class="cart__box">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="cart__btn button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
   <script src="js/script.min.js"></script>
 </body>
 
