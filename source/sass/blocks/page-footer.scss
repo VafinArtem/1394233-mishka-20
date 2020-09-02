@@ -1,15 +1,12 @@
 .page-footer {
   background-color: $basic-grey;
+}
 
+.page-footer__wrapper {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 143px;
-
-    &--index {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: min-content 143px;
-    }
   }
 
   @media (min-width: $desktop-width) {

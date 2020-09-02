@@ -56,12 +56,12 @@
     <p class="page-header__text">Бесплатная доставка по России</p>
   </header>
 
-  <main class="page-main container">
+  <main class="page-main">
     <h1 class="visually-hidden">Магазин товаров ручной вязки "Мишка"</h1>
     <section class="promo">
       <h2 class="visually-hidden">Обратите внимание</h2>
       <p class="promo__description">Милые штуки ручной&nbsp;<br>работы для дома</p>
-      <ul class="promo__list">
+      <ul class="promo__list container">
         <li class="promo__item">
           <a href="#" class="promo__link">Предметы<br>интерьера
             <svg class="promo__img" width="40" height="62">
@@ -78,7 +78,7 @@
         </li>
       </ul>
     </section>
-    <section class="featured">
+    <section class="featured container">
       <h2 class="featured__title">Товар недели</h2>
       <h3 class="featured__subtitle title">Вязаные корзинки</h3>
       <p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -162,10 +162,7 @@
         <a href="#" class="review__button button">Написать</a>
       </div>
     </section>
-  </main>
-
-  <footer class="page-footer page-footer--index">
-    <section class="page-footer__contacts contacts contacts--index">
+    <section class="contacts container">
       <div class="contacts__wrapper container">
         <h2 class="contacts__title title">Контакты</h2>
         <div class="contacts__inner">
@@ -192,44 +189,49 @@
         <a href="#" class="contacts__button button">НАпишите нам</a>
       </div>
     </section>
-    <a class="page-footer__logo logo logo--footer">
-      <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин Мишка">
-    </a>
-    <section class="page-footer__social social">
-      <h2 class="visually-hidden">Наши социальные сети</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a href="#" class="social__link social__link--instagram" aria-label="Страница Instagramm">
-            <svg class="social__img social__img--insta" width="22" height="21">
-              <use xlink:href="img/sprite.svg#icon-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--facebook" aria-label="Страница Facebook">
-            <svg class="social__img social__img--facebook" width="15" height="28">
-              <use xlink:href="img/sprite.svg#icon-fb"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="#" class="social__link social__link--twitter" aria-label="Страница Twitter">
-            <svg class="social__img social__img--twitter" width="23" height="20">
-              <use xlink:href="img/sprite.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="page-footer__copyright copyright">
-      <h2 class="visually-hidden">Копирайты</h2>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text">Разработано</a>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__img" aria-label="HTML Academy">
-        <svg class="copyright__icon" width="27" height="34">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
-        </svg>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo logo--footer">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Магазин Мишка">
       </a>
-    </section>
+      <section class="page-footer__social social">
+        <h2 class="visually-hidden">Наши социальные сети</h2>
+        <ul class="social__list">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--instagram" aria-label="Страница Instagramm">
+              <svg class="social__img social__img--insta" width="22" height="21">
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--facebook" aria-label="Страница Facebook">
+              <svg class="social__img social__img--facebook" width="15" height="28">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter" aria-label="Страница Twitter">
+              <svg class="social__img social__img--twitter" width="23" height="20">
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-footer__copyright copyright">
+        <h2 class="visually-hidden">Копирайты</h2>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text">Разработано</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__img" aria-label="HTML Academy">
+          <svg class="copyright__icon" width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
   </footer>
 </body>
 

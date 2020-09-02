@@ -95,6 +95,17 @@
       margin: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
+
+    &:hover,
+    &:focus,
+    &:active {
+      margin: 0 auto;
+    }
+  }
 }
 
 .promo__item {
