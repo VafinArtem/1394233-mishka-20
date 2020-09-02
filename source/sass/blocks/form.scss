@@ -16,7 +16,7 @@
 
     &--color {
       padding-top: 66px;
-      padding-bottom: 50px;
+      padding-bottom: 25px;
     }
 
     &--about {
@@ -54,6 +54,7 @@
 
     &--color {
       padding-right: 159px;
+      padding-bottom: 24px;
     }
 
     &--comment {
@@ -114,12 +115,13 @@
       grid-template-columns: 1fr 1fr;
       padding: 0;
       column-gap: 25px;
-      row-gap: 40px;
+      row-gap: 15px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr;
       column-gap: 25px;
+      row-gap: 16px;
     }
   }
 
@@ -139,7 +141,7 @@
 
   &--color {
     &:not(:last-child) {
-      margin-bottom: 0;
+      margin-bottom: 25px;
     }
   }
 
