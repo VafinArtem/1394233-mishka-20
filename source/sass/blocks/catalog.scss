@@ -71,7 +71,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 316px;
-    grid-template-rows: min-content 197px;
+    grid-template-rows: min-content;
   }
 }
 
@@ -99,6 +99,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 197px;
     padding: 0 28px;
     padding-top: 27px;
   }

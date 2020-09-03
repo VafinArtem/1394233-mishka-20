@@ -19,11 +19,11 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
-    height: 457px;
+    min-height: 457px;
     padding-top: 81px;
     background-image: url("../../img/review@1x.jpg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: left top;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/review@2x.jpg");

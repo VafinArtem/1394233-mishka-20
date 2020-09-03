@@ -1,4 +1,6 @@
 .production {
+  display: grid;
+  grid-template-rows: min-content;
   padding: 0 30px;
   padding-bottom: 57px;
 
@@ -24,16 +26,20 @@
   border: 1px solid $special-grey;
 
   &--title {
+    grid-row: 1/2;
     padding: 0 40px;
     padding-top: 21px;
     padding-bottom: 26px;
+    border-bottom: none;
 
     @media (min-width: $tablet-width) {
+      grid-row: 2/3;
       padding-top: 41px;
       padding-bottom: 23px;
     }
 
     @media (min-width: $desktop-width) {
+      grid-row: 1/2;
       padding: 0 12px;
       padding-top: 97px;
       padding-bottom: 4px;
@@ -41,8 +47,6 @@
   }
 
   &:first-child {
-    border-bottom: none;
-
     @media (min-width: $tablet-width) {
       grid-row: 2/3;
     }

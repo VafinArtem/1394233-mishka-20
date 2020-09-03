@@ -125,12 +125,8 @@
 
 .promo__item {
   position: relative;
-  height: 103px;
+  min-height: 103px;
   transition-duration: 0.5s;
-
-  &:hover {
-    height: 108px;
-  }
 
   &:nth-child(odd) {
     background-color: $basic-green;
@@ -156,11 +152,10 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    height: 129px;
+    min-height: 129px;
 
     &:focus,
     &:hover {
-      height: 134px;
       margin-top: -5px;
     }
   }
