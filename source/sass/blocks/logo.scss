@@ -20,6 +20,21 @@
   }
 
   &--footer {
+    &:hover,
+    &:focus {
+      & .logo__icon {
+        opacity: 1;
+        fill: $special-green-3;
+      }
+    }
+
+    &:active {
+      & .logo__icon {
+        opacity: 0.3;
+        fill: $special-green-3;
+      }
+    }
+
     @media (max-width: $mobile-width-only) {
       display: none;
     }
