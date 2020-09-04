@@ -212,6 +212,7 @@
     }
   }
 
+  &:active,
   &:disabled {
     & + .form__box--radio {
       border-color: transparentize($basic-black, 0.7);
@@ -281,6 +282,7 @@
     }
   }
 
+  &:active,
   &:disabled {
     & + .form__box--check {
       border-color: transparentize($special-grey-dark, 0.7);
