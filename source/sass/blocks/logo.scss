@@ -46,12 +46,9 @@
 }
 
 .logo__img {
-  width: 85.97px;
-  height: 34.92px;
-
   @media (min-width: $tablet-width) {
-    width: 113.01px;
-    height: 45.96px;
+    width: 113px;
+    height: 46px;
   }
 
   @media (min-width: $desktop-width) {
