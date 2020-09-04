@@ -34,17 +34,21 @@
 
   @media (min-width: $tablet-width) {
     width: 566px;
-    padding: 0 108px;
+    padding: 0 105px;
     padding-top: 38px;
   }
 }
 
 .cart__title {
-  width: 176px;
+  width: 163px;
+  padding-bottom: 15px;
+  line-height: 29px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding-bottom: 11px;
     font-size: 30px;
   }
 }
@@ -54,6 +58,10 @@
   font-size: 15px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .cart__form {
@@ -65,8 +73,12 @@
 .cart__block {
   margin: 0;
   padding: 0;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 29px;
+  }
 }
 
 .cart__list {
