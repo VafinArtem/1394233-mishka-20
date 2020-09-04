@@ -72,6 +72,22 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 316px;
     grid-template-rows: min-content;
+
+    &:hover,
+    &:focus-within {
+      &:hover,
+      &:focus-within {
+        & .catalog__wrapper {
+          box-shadow: 0 6px 10px transparentize($basic-black, 0.9);
+        }
+      }
+
+      &:active {
+        & .catalog__wrapper {
+          box-shadow: 0 3px 5px transparentize($basic-black, 0.9);
+        }
+      }
+    }
   }
 }
 
