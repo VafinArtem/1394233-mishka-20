@@ -15,7 +15,7 @@
     padding-left: 224px;
     padding-right: 50px;
     padding-top: 161px;
-    padding-bottom: 102px;
+    padding-bottom: 105px;
   }
 }
 
@@ -80,7 +80,7 @@
   padding-top: 28px;
 
   &--btn {
-    padding-top: 39px;
+    padding-top: 42px;
   }
 
   @media (min-width: $tablet-width) {
@@ -88,7 +88,7 @@
     padding-top: 50px;
 
     &--btn {
-      padding-top: 52px;
+      padding-top: 55px;
     }
   }
 
@@ -98,7 +98,7 @@
     padding-bottom: 26px;
 
     &--btn {
-      padding-bottom: 3px;
+      padding-bottom: 0;
     }
   }
 }
@@ -114,11 +114,11 @@
     width: 155px;
   }
 
-  @media (max-width: $mobile-width-only) {
-    br {
-      display: none;
-    }
-  }
+  // @media (max-width: $mobile-width-only) {
+  //   br {
+  //     display: none;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -139,6 +139,7 @@
   outline: none;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 2px;
     font-size: 17px;
   }
 
