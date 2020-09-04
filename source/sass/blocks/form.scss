@@ -199,11 +199,6 @@
   }
 }
 
-.form__radio,
-.form__check {
-  appearance: none;
-}
-
 .form__radio {
   &:hover,
   &:focus {
@@ -298,6 +293,7 @@
 .form__box {
   position: absolute;
   border: 2px solid $special-grey-dark;
+  cursor: pointer;
 
   &--radio {
     top: -4px;
