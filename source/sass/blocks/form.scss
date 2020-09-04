@@ -1,8 +1,11 @@
 .form__block {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   padding-bottom: 34px;
   border: none;
+  overflow: hidden;
 
   &--comment {
     padding-bottom: 15px;
@@ -70,10 +73,27 @@
 }
 
 .form__title {
+  align-self: flex-start;
+  padding-right: 21px;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-green;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    background-color: $basic-white;
+
+    &::before {
+      @include pseudo;
+      bottom: 100%;
+      margin-bottom: -10px;
+      width: 3000%;
+      height: 1px;
+      background-color: $basic-green;
+      z-index: -5;
+    }
+  }
 
   &--about {
     padding-bottom: 29px;
