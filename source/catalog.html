@@ -157,29 +157,31 @@
       </ul>
     </section>
     <article class="production container">
-      <div class="production__video">
-        <picture>
-          <source type="image/webp" media="(min-width: 1150px)"
-            srcset="img/video-desktop@1x.webp 1x, img/video-desktop@1x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@1x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, video-tablet@1x.jpg 2x">
-          <img class="production__img" src="img/video-mobile@1x.jpg" alt="Превью видео о процессе производства"
-            srcset="img/video-mobile@2x.jpg 2x">
-        </picture>
-        <svg class="production__icon" width="101" height="77">
-          <use xlink:href="img/sprite.svg#icon-play"></use>
-        </svg>
-      </div>
-      <div class="production__wrapper production__wrapper--title">
-        <h2 class="production__title title">Процесс производства</h2>
-      </div>
       <div class="production__wrapper">
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
-          появляются наши товары.</p>
-        <a href="form.html" class="production__button button">СДелать заказ</a>
+        <div class="production__video">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/video-desktop@1x.webp 1x, img/video-desktop@1x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@1x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, video-tablet@1x.jpg 2x">
+            <img class="production__img" src="img/video-mobile@1x.jpg" alt="Превью видео о процессе производства"
+              srcset="img/video-mobile@2x.jpg 2x">
+          </picture>
+          <svg class="production__icon" width="101" height="77">
+            <use xlink:href="img/sprite.svg#icon-play"></use>
+          </svg>
+        </div>
+        <div class="production__inner production__inner--title">
+          <h2 class="production__title title">Процесс производства</h2>
+        </div>
+        <div class="production__inner">
+          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+            появляются наши товары.</p>
+          <a href="form.html" class="production__button button">СДелать заказ</a>
+        </div>
       </div>
     </article>
   </main>
