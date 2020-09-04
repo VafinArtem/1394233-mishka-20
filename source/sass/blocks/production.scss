@@ -54,34 +54,6 @@
   padding-bottom: 26px;
   border: 1px solid $special-grey;
 
-  // @media (min-width: $desktop-width) {
-  //   position: relative;
-
-  //   &::after {
-  //     @include pseudo;
-
-  //     top: 0;
-  //     right: 0;
-  //     width: 369px;
-  //     height: 455px;
-  //     z-index: -10;
-  //     transition: 0.5s;
-  //   }
-
-  //   &:hover,
-  //   &:focus-within {
-  //     &::after {
-  //       box-shadow: 0 6px 10px transparentize($basic-black, 0.9);
-  //     }
-  //   }
-
-  //   &:active {
-  //     &::after {
-  //       box-shadow: 0 3px 5px transparentize($basic-black, 0.9);
-  //     }
-  //   }
-  // }
-
   &--title {
     grid-row: 1/2;
     padding: 0 40px;
@@ -100,11 +72,6 @@
       padding: 0 12px;
       padding-top: 97px;
       padding-bottom: 4px;
-
-      // &::after {
-      //   margin-top: -2px;
-      //   margin-right: -1px;
-      // }
     }
   }
 
@@ -124,11 +91,6 @@
       padding-left: 79px;
       padding-right: 56px;
       padding-bottom: 35px;
-
-      // &::after {
-      //   margin-top: -174px;
-      //   margin-right: -1px;
-      // }
     }
   }
 }
