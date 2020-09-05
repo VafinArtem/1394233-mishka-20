@@ -4,6 +4,7 @@ const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
+const resolveUrl = require('gulp-resolve-url');
 const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
@@ -24,6 +25,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(resolveUrl())
     .pipe(rename("styles.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
